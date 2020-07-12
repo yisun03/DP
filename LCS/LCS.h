@@ -31,6 +31,12 @@ namespace yis
     // if str1[i] == str2[j] then C[i,j] = C[i-1,j-1] +1;
     // else if str1[i] != str2[j] then C[i,j] = max{C[i-1,j] , C[i,j-1]}.
     static int lcs(string& str1, string& str2,int m,int n);
+
+    // 计算两个字符串的最长公共子串(连续子序列).
+    // 计算公式为：
+    // if str1[i] == str2[j] then C[i,j] = C[i-1,j-1] +1;
+    // else if str1[i] != str2[j] then C[i,j] = 0.
+    static int lcs_continue(string& str1, string& str2, int m, int n);
   };
 }
 

@@ -6,7 +6,13 @@ int main()
   string str1 = "acdebfgzyx";
   string str2 = "ebcdayxgfz";
 
+  string str3 = "asdfas";
+  string str4 = "werasdfaswer";
+
   std::cout << "str1 和str2的最长公共子序列为：\n " << yis::LCS::lcs(str1, str2, str1.length(), str2.length());
+  std::cout << std::endl;
+
+  std::cout << "str3 和str4的最长公共子串为：\n" << yis::LCS::lcs_continue(str3,str4,str3.length(),str4.length());
   std::cout << std::endl;
   return 0;
 }
