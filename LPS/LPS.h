@@ -8,7 +8,6 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include "../LCS_CTN/LCS_CTN.h"
 
 using std::string;
 using std::vector;
